@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: hsl(0, 100%, 74%);
+  overflow-x: hidden;
+  background-image: url(/images/bg-intro-desktop.png);
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+}
+.container .content-main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+}
+
+.container .content-main .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container .content-main .content h5 {
+  width: 500px;
+  color: white;
+  font-weight: lighter;
+}
+.container .content-main .content h1 {
+  font-weight: bolder;
+  font-size: 3em;
+  color: white;
+  width: 450px;
+}
+
+.container .sign-up form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 35px;
+  width: 450px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.container .sign-up form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.container .sign-up .form-control {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.container .sign-up .card-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  margin-bottom: 25px;
+  color: white;
+  background-color: rgb(96, 85, 165);
+  text-align: center;
+  width: 500px;
+  height: 50px;
+}
+
+.container .sign-up p {
+  text-align: center;
+  font-size: 12px;
+}
+
+.container .sign-up .color-red {
+  color: hsl(0, 100%, 74%);
+  font-weight: 700;
+}
+
+.container .sign-up input {
+  width: 430px;
+  height: 45px;
+  border-radius: 5px;
+  border: 1px solid hsl(0, 0%, 84%);
+  padding: 5px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.container .sign-up input:focus {
+  outline: none;
+  border: 1.5px solid #6055a5;
+  border-radius: 5px;
+}
+
+.container .sign-up button {
+  width: 430px;
+  height: 45px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  background-color: hsl(154, 59%, 51%);
+  color: white;
+  font-weight: 700;
+}
+
+/* !Responsive BreakPoint */
+@media (max-width: 500px) {
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  .container .content-main .content h1 {
+    font-size: 2em;
+    width: 400px;
+    text-align: center;
+  }
+
+  .container .content-main .content h5 {
+    text-align: center;
+    width: 400px;
+    font-size: 12px;
+  }
+
+  .container .content-main .sign-up .card-1 {
+    width: 400px;
+    align-items: center;
+  }
+
+  .container .content-main .sign-up .card-1 h5 {
+    width: 200px;
+  }
+
+  .container .content-main .sign-up form {
+    width: 340px;
+  }
+
+  .container .content-main .sign-up input {
+    width: 350px;
+  }
+  .container .content-main .sign-up button {
+    width: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    display: flex;
+    align-items: center;
+  }
+}
